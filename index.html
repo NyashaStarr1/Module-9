@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Noir Cases | The Board</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Lato:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Site Styles -->
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="grain-overlay" aria-hidden="true"></div>
+<div class="page">
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-wrapper">
+      <div class="logo">
+        <img src="images/logo.png" alt="The Noir Cases logo">
+      </div>
+     <nav>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="episodes.html">Episodes</a>
+    <a href="resources.html">Resources</a>
+    <a href="lounge.html">The Lounge</a>
+	<a href="about.html">About</a>
+  </div>
+
+  <div class="nav-search">
+    <input type="text" id="siteSearch" placeholder="Search 🔍">
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="board">
+    <div class="hero-left">
+      <div class="hero-art">
+        <img class="hero-cover" src="images/cover art.png"
+          alt="The Noir Cases cover art" usemap="#covermap"
+          title="Return to The Noir Cases homepage">
+      </div>
+      <map name="covermap">
+        <area shape="circle" coords="350,150,40" href="#resources" alt="Resources">
+       <area shape="circle" coords="120,90,45" href="episodes.html" alt="Episodes">
+        <area shape="circle" coords="200,300,55" href="#lounge"    alt="The Lounge">
+        <area shape="rect"   coords="0,0,600,600" href="#lounge"   alt="The Lounge">
+      </map>
+    </div>
+    <div class="hero-right">
+      <h2>The Noir Cases</h2>
+      <p>A global true crime podcast and digital platform amplifying marginalized voices. Hosted by Nya Starr, each episode dives into cases affecting BIPOC communities&nbsp; blending research, cultural context, and storytelling while bridging the gap between the criminal justice system and the communities it serves.</p>
+      <a class="learnmore" href="#episodes">Explore &#10132;</a>
+    </div>
+  </section>
+
+  <!-- TAGLINE BAR -->
+  <div class="tagline-bar">
+    <span class="diamond">&#9670;</span>
+    <span class="tagline-text">Advocating for the unheard and shedding light on the unseen</span>
+    <span class="diamond">&#9670;</span>
+  </div>
+
+  <!-- FEATURED CASE -->
+  <section class="featured-case" id="episodes">
+    <h3>Featured Case</h3>
+    <div class="featured-container">
+      <img src="images/Jaliek Rainwalker.png"
+        alt="Jaliek Rainwalker missing case"
+        class="featured-thumb"
+        title="Featured Case: Jaliek&rsquo;s Note — Missing child, Greenwich NY">
+      <div class="featured-body">
+        <h4>Jaliek&rsquo;s Note</h4>
+        <p class="meta">
+          <strong>Type:</strong> Missing &bull;
+          <strong>Status:</strong> Ongoing &bull;
+          <strong>Location:</strong> New York
+        </p>
+        <p>Jaliek Rainwalker was just 12 when he disappeared from Greenwich, New York in 2007. Labeled a &ldquo;troubled&rdquo; child and shuffled between adoptive homes, he left behind a cryptic note the night he went missing. This episode explores the unanswered questions, shifting stories, and unusual behaviors that followed.</p>
+        <div class="audio-wrapper">
+          <p class="audio-label">Episode Sound Bite</p>
+          <audio controls>
+            <source src="jaliek soundbite.mp4" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <a class="button primary featured-btn"
+          href="https://www.buzzsprout.com/2208391/episodes/17130888"
+          target="_blank">
+          Listen to Full Episode &#10132;
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- NOIR FILES -->
+  <section class="noir-files" id="noir-files">
+
+    <div class="noir-files-header">
+      <h3>Noir Files</h3>
+      
+    </div>
+
+    <div id="noirTabs">
+
+      <div class="noir-tab-filters">
+        <button class="noir-tab-btn active" data-filter="all">All</button>
+        <button class="noir-tab-btn" data-filter="solved">Solved</button>
+        <button class="noir-tab-btn" data-filter="unsolved">Unsolved</button>
+        <button class="noir-tab-btn" data-filter="humanrights">Human Rights</button>
+        <button class="noir-tab-btn" data-filter="historical">Historical</button>
+        <button class="noir-tab-btn" data-filter="missingchildren">Missing Children</button>
+        <button class="noir-tab-btn" data-filter="missingpersons">Missing Persons</button>
+      </div>
+
+      <div class="noir-container">
+        <div class="arrow left"></div>
+        <div class="noir-scroll">
+          <div class="case-card" data-category="solved" title="The North Epping Nightmare: Suspicious deaths at a family home in Australia that shocked the nation.">
+            <img src="images/epping.png" alt="North Epping Nightmare case">
+            <p>The North Epping Nightmare</p>
+          </div>
+          <div class="case-card" data-category="unsolved missingchildren" title="9-year-old Asha Degree disappeared from her North Carolina home in 2000 &mdash; one of the most mysterious missing child cases in U.S. history.">
+            <img src="images/asha.jpg" alt="Asha Degree missing child case">
+            <p>Asha Degree &mdash; Last Seen</p>
+          </div>
+          <div class="case-card" data-category="solved" title="Hadiya Pendleton, 15, was shot and killed in Chicago just days after performing at President Obama's inauguration.">
+            <img src="images/hadiya pendleton.jpg" alt="Hadiya Pendleton Chicago shooting case">
+            <p>Inaugural Dreams, Chicago&rsquo;s Sorrow</p>
+          </div>
+          <div class="case-card" data-category="historical" title="Fred Hampton, chairman of the Illinois Black Panther Party, was assassinated by Chicago police in 1969.">
+            <img src="images/fred hampton.jpg" alt="Fred Hampton historical case">
+            <p>When Power Fears Truth</p>
+          </div>
+          <div class="case-card" data-category="humanrights" title="Paulo Paulino Guajajara was an Indigenous land defender murdered in the Amazon in 2019.">
+            <img src="images/paulo guajajara.jpeg" alt="Paulo Paulino Guajajara Amazon activist case">
+            <p>Guardian of the Amazon</p>
+          </div>
+          <div class="case-card" data-category="humanrights solved" title="Marissa Alexander fired a warning shot in self-defense and faced 20 years in prison &mdash; exposing deep inequities in Stand Your Ground laws.">
+            <img src="images/marissa.webp" alt="Marissa Alexander case">
+            <p>Warning Shot</p>
+          </div>
+          <div class="case-card" data-category="unsolved missingchildren" title="Jaliek Rainwalker disappeared from Greenwich, NY in 2007 at age 12, leaving behind only a cryptic goodbye note.">
+            <img src="images/Jaliek Rainwalker.png" alt="Jaliek Rainwalker case">
+            <p>Jaliek&rsquo;s Note</p>
+          </div>
+        
+			<div class="case-card" data-category="unsolved" title="Alonzo Brooks disappeared after a party in rural Kansas, where racial tension and conflicting accounts still cloud the truth behind his death.">
+  <img src="images/ChatGPT Image Mar 25, 2026, 10_03_26 AM.png" alt="Midnight in La Cygne case">
+  <p>Midnight in La Cygne (Coming Soon)</p>
+</div>
+  
+<div class="case-card" data-category="humanrights missingchildren" title="Rani Hong escaped human trafficking, but in Noida, many children never did. THis episode exposes a pattern of disappearances, exploitation, and silence. ">
+  <img src="images/ChatGPT Image Mar 25, 2026, 10_03_26 AM.png" alt="Delhi's Smuggled Childhood case">
+  <p>Delhi’s Smuggled Childhood (Coming Soon)</p>
+</div>
+			
+		<div class="case-card" data-category="unsolved" title="Amber Tuccaro’s final recorded phone call captured the voice of her suspected killer, but the case remains unsolved.">
+  <img src="images/ChatGPT Image Mar 25, 2026, 10_03_26 AM.png" alt="Amber Tuccaro case">
+  <p>Caught on Tape: The Last Call (Coming Soon)</p>
+</div>
+
+<div class="case-card" data-category="humanrights historical" title="The assassination of Patrice Lumumba exposed global power struggles, colonial interference, and political betrayal.">
+  <img src="images/ChatGPT Image Mar 25, 2026, 10_03_26 AM.png" alt="Patrice Lumumba case">
+  <p>Congo’s First Betrayal (Coming Soon)</p>
+</div>
+
+</div>
+  <div class="arrow right"></div>
+      </div>
+
+    </div>
+<div style="text-align:center; margin-top:20px;">
+  <a class="text-link view-cases" href="cases.html">VIEW CASE FILES →</a>
+</div>
+  </section>
+
+
+  <!-- INSIDE THE LOUNGE -->
+  <section class="lounge-section scroll-reveal" id="lounge">
+    <div class="section-header">
+      <h3>&#128394; Inside the Lounge</h3>
+      <p class="section-intro">Thoughts, deep dives, and behind-the-scenes from the world of The Noir Cases.</p>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <span class="blog-date">Latest Blog Post</span>
+        <img class="lounge-thumb" src="images/blog post.png" alt="Why Representation Matters in True Crime">
+        <h4>Why Representation Matters in True Crime</h4>
+        <p>The stories we tell shape how communities are seen. A look at why diverse voices in true crime aren&rsquo;t optional &mdash; they&rsquo;re essential. Explore how The Noir Cases is changing the narrative, one episode at a time.</p>
+       <a class="button primary" href="#lounge">Read More →</a>
+      </article>
+      <article class="blog-card">
+        <span class="blog-date">Episode Discussion</span>
+        <img src="images/marissa.jpg" alt="Warning Shot — The Marissa Alexander Story" class="lounge-thumb">
+        <h4>Warning Shot &mdash; The Marissa Alexander Story</h4>
+        <p>Marissa Alexander fired a warning shot to protect herself from her abusive husband and faced 20 years in prison for it. After listening, we want to hear your take.</p>
+        <p class="discussion-q">&#128172; <em>Stand Your Ground has been successfully invoked in Florida court &mdash; so why didn&rsquo;t it protect a woman with a documented history of intimate partner violence?</em></p>
+        <a class="button primary" href="https://www.buzzsprout.com/2208391/episodes/15183282" target="_blank">
+  Join the Lounge →
+</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- RESOURCES & SUPPORT -->
+  <section class="resources-section scroll-reveal" id="resources">
+    <div class="section-header">
+      <h3>&#127760; Resources &amp; Support</h3>
+      <p class="section-intro">Connecting communities to the organizations, data, and support systems that drive real change.</p>
+    </div>
+    <div class="resource-grid">
+      <div class="resource-col">
+        <h4 class="resource-col-title">&#9878; Advocacy &amp; Legal</h4>
+        <ul class="resource-col-list">
+          <li>
+            <a href="https://innocenceproject.org" target="_blank" rel="noopener" title="Legal organization working to exonerate wrongfully convicted individuals through DNA evidence."><strong>Innocence Project</strong></a>
+            <span class="res-desc">Wrongful convictions &amp; DNA exoneration</span>
+          </li>
+          <li>
+            <a href="https://eji.org" target="_blank" rel="noopener" title="Nonprofit addressing racial injustice and mass incarceration, founded by Bryan Stevenson."><strong>Equal Justice Initiative</strong></a>
+            <span class="res-desc">Racial injustice in the criminal justice system</span>
+          </li>
+        </ul>
+      </div>
+      <div class="resource-col">
+        <h4 class="resource-col-title">&#128156; Survivor Support</h4>
+        <ul class="resource-col-list">
+          <li>
+            <a href="https://www.rainn.org" target="_blank" rel="noopener" title="The largest U.S. organization dedicated to supporting survivors of sexual violence."><strong>RAINN</strong></a>
+            <span class="res-desc">Sexual violence prevention &amp; support</span>
+          </li>
+          <li>
+            <strong title="Text HOME to 741741 for free, 24/7 crisis counseling.">Crisis Text Line</strong>
+            <span class="res-desc">Text HOME to 741741</span>
+          </li>
+        </ul>
+      </div>
+      <div class="resource-col">
+        <h4 class="resource-col-title">&#128202; Data &amp; Media</h4>
+        <ul class="resource-col-list">
+          <li>
+            <a href="https://bjs.ojp.gov" target="_blank" rel="noopener" title="Federal agency providing data and research on crime and criminal justice trends."><strong>Bureau of Justice Statistics</strong></a>
+            <span class="res-desc">Federal data reports</span>
+
+          </li>
+          <li>
+            <a href="https://www.sentencingproject.org" target="_blank" rel="noopener" title="Research organization focused on criminal justice reform and reducing mass incarceration."><strong>The Sentencing Project</strong></a>
+            <span class="res-desc">Criminal justice statistics</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="resource-cta-wrap">
+      <a href="#resources" class="button primary">View All Resources &#127760;</a>
+    </div>
+  </section>
+
+
+  <canvas id="noirCanvas" class="noir-canvas" aria-hidden="true"></canvas>
+
+  <!-- EXPLORE FURTHER -->
+  <section class="explore-section scroll-reveal" id="explore">
+    <h3>Explore Further</h3>
+    <div class="actions">
+      <a href="#episodes" class="button primary">Listen to Episodes &#127911;</a>
+      <a href="#resources" class="button secondary">View Resources &#127760;</a>
+      <a href="#lounge" class="button primary">Read the Blog &#128394;</a>
+      <a href="#contact" class="button secondary">Contact Us &#128172;</a>
+    </div>
+  </section>
+
+  <!-- YOUR HOST -->
+  <section class="host-section scroll-reveal" id="about-host">
+    <div class="host-inner">
+      <div class="host-image-wrap">
+        <canvas id="hostCanvas" class="host-canvas" aria-hidden="true"></canvas>
+        <img src="images/nya-starr.png" alt="Nya Starr, host of The Noir Cases" class="host-photo">
+      </div>
+      <div class="host-bio-text">
+        <h3>&#127908; Your Host</h3>
+        <h4 class="host-name">Nya Starr</h4>
+        <p class="host-title">Creator &amp; Host &mdash; The Noir Cases</p>
+        <p>Nya Starr is the creator and host of The Noir Cases, where she examines true crime through a systemic and research-driven lens. Holding a master&rsquo;s degree in Criminal Justice and grounded in her background in sociology, she brings academic rigor and lived experience to every investigation.</p>
+        <p>An Air Force veteran and longtime advocate, her activism began in her college years, where she organized and led efforts confronting racism and institutional inequity. Today, her work challenges narratives, amplifies marginalized voices, and questions the systems that shape justice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section scroll-reveal" id="contact">
+    <div class="section-header">
+      <h3>&#9993; Contact</h3>
+      <p class="section-intro">Have a question, collaboration idea, or just want to connect? Reach out below.</p>
+    </div>
+    <div class="form-inner">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="contactName">Your Name *</label>
+          <input type="text" id="contactName" name="contactName" placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email Address *</label>
+          <input type="email" id="contactEmail" name="contactEmail" placeholder="your@email.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="contactSubject">Subject</label>
+        <input type="text" id="contactSubject" name="contactSubject" placeholder="e.g. Collaboration, Media Inquiry, General Question">
+      </div>
+      <div class="form-fieldset">
+        <p class="fieldset-legend">Reason for reaching out:</p>
+        <div class="radio-group">
+          <label class="radio-label"><input type="radio" name="contactReason" value="collaboration"> Collaboration</label>
+          <label class="radio-label"><input type="radio" name="contactReason" value="media"> Media Inquiry</label>
+          <label class="radio-label"><input type="radio" name="contactReason" value="tip"> Case Tip</label>
+          <label class="radio-label"><input type="radio" name="contactReason" value="general"> General</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="contactMessage">Message *</label>
+        <textarea id="contactMessage" name="contactMessage" rows="5" placeholder="Tell us what's on your mind..."></textarea>
+      </div>
+      <div class="form-fieldset">
+        <p class="fieldset-legend">Consent:</p>
+        <div class="checkbox-group">
+          <label class="check-label"><input type="checkbox" id="contactConsent" name="contactConsent" value="agree"> I agree to be contacted at the email address provided</label>
+        </div>
+      </div>
+      <button type="button" class="form-submit-btn" onclick="handleContactSubmit()">Send Message &#10132;</button>
+    </div>
+  </section>
+
+  <!-- PLATFORMS -->
+  <section class="platforms" id="listen">
+    <h3>Listen On All Platforms</h3>
+    <div class="platform-logos">
+      <a href="https://thenoircases.buzzsprout.com" target="_blank" rel="noopener" title="Listen on iHeart Radio"><img src="images/iheart.png" alt="iHeart Radio"></a>
+      <a href="https://thenoircases.buzzsprout.com" target="_blank" rel="noopener" title="Listen on Apple Podcasts"><img src="images/apple.png" alt="Apple Podcasts"></a>
+      <a href="https://thenoircases.buzzsprout.com" target="_blank" rel="noopener" title="Listen on Spotify"><img src="images/spotify.png" alt="Spotify"></a>
+    </div>
+  </section>
+
+  <footer id="about">
+    <p>&copy; 2025 Nyasha Starr | 404 Starrow Productions. All rights reserved.</p>
+  </footer>
+
+</div><!-- end .page -->
+
+<!-- SCRIPTS — jQuery loaded ONCE, at bottom of body -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function() {
+
+  /* Noir Files — Vanilla JS tab filter */
+  document.querySelectorAll(".noir-tab-btn").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      document.querySelectorAll(".noir-tab-btn").forEach(function(b) { b.classList.remove("active"); });
+      btn.classList.add("active");
+      var filter = btn.getAttribute("data-filter");
+      document.querySelectorAll(".case-card").forEach(function(card) {
+        var cats = card.getAttribute("data-category") || "";
+        card.style.display = (filter === "all" || cats.split(" ").indexOf(filter) !== -1) ? "" : "none";
+      });
+    });
+  });
+
+  /* jQuery UI Tooltips */
+  $(document).tooltip({
+    show: { effect: "fadeIn", duration: 180 },
+    hide: { effect: "fadeOut", duration: 150 },
+    position: { my: "center bottom-10", at: "center top" }
+  });
+
+  /* Arrow scroll for Noir Files */
+ $(".arrow.left").on("click", function() {
+  var $s = $(this).closest(".noir-container").find(".noir-scroll");
+  $s.animate({ scrollLeft: "-=220" }, 300);
+});
+
+$(".arrow.right").on("click", function() {
+  var $s = $(this).closest(".noir-container").find(".noir-scroll");
+  $s.animate({ scrollLeft: "+=220" }, 300);
+});
+  /* Scroll Reveal */
+  var $rev = $(".scroll-reveal");
+  function checkReveal() {
+    var wh = window.innerHeight;
+    $rev.each(function() {
+      if (this.getBoundingClientRect().top < wh - 80) $(this).addClass("revealed");
+    });
+  }
+  $(window).on("scroll", checkReveal);
+  checkReveal();
+
+  /* Canvas: noir diamond */
+  var nc = document.getElementById("noirCanvas");
+  if (nc) {
+    nc.width = 100; nc.height = 100;
+    var c = nc.getContext("2d");
+    c.fillStyle = "rgba(139,58,58,0.10)"; c.strokeStyle = "rgba(139,58,58,0.50)"; c.lineWidth = 2;
+    c.beginPath(); c.moveTo(50,4); c.lineTo(96,50); c.lineTo(50,96); c.lineTo(4,50); c.closePath(); c.fill(); c.stroke();
+    c.beginPath(); c.arc(50,50,18,0,Math.PI*2);
+    c.strokeStyle = "rgba(38,67,108,0.40)"; c.lineWidth = 1.5; c.stroke();
+  }
+
+  /* Canvas: host frame */
+  var hc = document.getElementById("hostCanvas");
+  if (hc) {
+    hc.width = 240; hc.height = 240;
+    var h = hc.getContext("2d");
+    h.strokeStyle = "rgba(139,58,58,0.45)"; h.lineWidth = 3; h.strokeRect(8,8,224,224);
+    h.strokeStyle = "rgba(38,67,108,0.30)"; h.lineWidth = 1.5; h.strokeRect(16,16,208,208);
+    [[14,14],[226,14],[14,226],[226,226]].forEach(function(p) {
+      h.fillStyle = "rgba(139,58,58,0.55)";
+      h.beginPath(); h.moveTo(p[0],p[1]-7); h.lineTo(p[0]+7,p[1]); h.lineTo(p[0],p[1]+7); h.lineTo(p[0]-7,p[1]); h.closePath(); h.fill();
+    });
+  }
+
+});
+
+/* Search */
+document.getElementById("siteSearch").addEventListener("keydown", function(e) {
+  if (e.key !== "Enter") return;
+  e.preventDefault();
+  var term = this.value.toLowerCase().trim();
+  if (!term) { alert("Please enter a search term."); return; }
+  document.querySelectorAll(".search-highlight").forEach(function(el) { el.classList.remove("search-highlight"); });
+  var found = false;
+  document.querySelectorAll("section, .blog-card, .resource-col").forEach(function(el) {
+    if (el.textContent.toLowerCase().includes(term)) {
+      el.classList.add("search-highlight");
+      if (!found) { el.scrollIntoView({ behavior: "smooth", block: "center" }); found = true; }
+    }
+  });
+  if (!found) alert("No results found for \"" + term + "\".");
+});
+
+
+/* Contact Form */
+function handleContactSubmit() {
+  var n = document.getElementById("contactName").value.trim();
+  var e = document.getElementById("contactEmail").value.trim();
+  var m = document.getElementById("contactMessage").value.trim();
+  var c = document.getElementById("contactConsent").checked;
+  if (!n) { alert("Please enter your name."); return; }
+  if (!e) { alert("Please enter your email."); return; }
+  if (!m) { alert("Please enter a message."); return; }
+  if (!c) { alert("Please confirm you agree to be contacted."); return; }
+  alert("Thank you, " + n + "! Your message has been received.");
+  ["contactName","contactEmail","contactSubject","contactMessage"].forEach(function(id) { document.getElementById(id).value = ""; });
+  document.getElementById("contactConsent").checked = false;
+  document.querySelectorAll("input[name='contactReason']").forEach(function(r) { r.checked = false; });
+}
+</script>
+
+</body>
+</html>
